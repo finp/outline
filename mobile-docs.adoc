@@ -1,0 +1,14 @@
+:toc:
+
+= Getting Started
+== Overview of AeroGear Mobile Services
+
+== Terminology
+== Architecture
+== Installing AeroGear Mobile Services
+* minishift only for community release
+== Debugging AeroGear Mobile Services
+
+== Using an AeroGear Mobile Service Showcase Apps
+=== Setting up the AeroGear Showcase Project in OpenShift
+=== Monitor Service and App
