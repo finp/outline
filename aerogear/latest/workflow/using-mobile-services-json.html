@@ -53,8 +53,8 @@ $(addBlockSwitches);
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Associating Mobile Clients with Mobile Services :: AeroGear</title>
-    <link rel="canonical" href="https://www.aerogear.org/aerogear/latest/workflow/connecting-mobile-clients-to-mobile-services.html">
+    <title>Using mobile-services.json File :: AeroGear</title>
+    <link rel="canonical" href="https://www.aerogear.org/aerogear/latest/workflow/using-mobile-services-json.html">
     <meta name="generator" content="Antora 1.0.0">
     <link rel="stylesheet" href="../../../_/css/site.css">
   </head>
@@ -155,7 +155,7 @@ $(addBlockSwitches);
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="provisioning-a-mobile-client.html">Provisioning</a>
   </li>
-  <li class="nav-item is-current-page" data-depth="3">
+  <li class="nav-item" data-depth="3">
     <a class="nav-link" href="connecting-mobile-clients-to-mobile-services.html">Associating with Service</a>
   </li>
 </ul>
@@ -206,65 +206,64 @@ $(addBlockSwitches);
   <button class="navigation-toggle"></button>
   <a href="../index.html" class="home-link"></a>
 <nav class="crumbs" role="navigation" aria-label="breadcrumbs">
-  <ul>
-    <li class="crumb"><a href="../index.html">AeroGear</a></li>
-    <li class="crumb"><a href="index.html">Mobile Apps &amp; Services Workflow</a></li>
-    <li class="crumb"><a href="clients.html">Mobile Clients</a></li>
-    <li class="crumb"><a href="connecting-mobile-clients-to-mobile-services.html">Associating with Service</a></li>
-  </ul>
 </nav>
-  <div class="edit-this-page"><a href="file:///home/pwright/repos/aerogear/mobile-docs/modules/workflow/pages/connecting-mobile-clients-to-mobile-services.adoc">Edit this Page</a></div>
+  <div class="edit-this-page"><a href="file:///home/pwright/repos/aerogear/mobile-docs/modules/workflow/pages/using-mobile-services-json.adoc">Edit this Page</a></div>
 </div>
 <article class="doc">
-<h1>Associating Mobile Clients with Mobile Services</h1>
+<h1>Using mobile-services.json File</h1>
 <div class="paragraph">
-<p>To use mobile services, you must represent your mobile app in OpenShift using a mobile client and that mobile client must be associated with the mobile service.</p>
-</div>
-<div class="admonitionblock tip">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
-</td>
-<td class="content">
-The association between a mobile client and a mobile service uses the <a href="#https://blog.openshift.com/asynchronous-bind-with-the-automation-broker/">OpenShift bind</a> feature.
-</td>
-</tr>
-</table>
+<p>The  <code>mobile-services.json</code> file contains all the information your code needs to use mobile services.</p>
 </div>
 <div class="paragraph">
-<p>To associate a mobile client with a mobile service:</p>
+<p>Prerequisites:</p>
+</div>
+<div class="ulist checklist">
+<ul class="checklist">
+<li>
+<p><i class="fa fa-check-square-o"></i> You have installed Minishift with the mobilecore addon as described in <a href="../minishift_install.inc.html" class="page">Setting Up</a>.</p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> You have <a href="provisioning-services.html" class="page">provisioned at least one mobile service</a></p>
+</li>
+<li>
+<p><i class="fa fa-check-square-o"></i> You have <a href="connecting-mobile-clients-to-mobile-services.html" class="page">associated your mobile client with a mobile service</a></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>To download the <code>mobile-services.json</code> file:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Navigate to the <strong>Overview</strong> your OpenShift project.</p>
+<p>Navigate to your Project Overview in OpenShift</p>
 </li>
 <li>
-<p>Expand the mobile client you want to associate by clicking the <strong>&gt;</strong> icon.</p>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Note"></i>
-</td>
-<td class="content">
-Your mobile app will be represented by two items in OpenShift, an item in the <strong>Mobile Clients</strong> list and an item in the <strong>Provisioned Services</strong> list. Make sure to expand the item in the <strong>Mobile Clients</strong> list.
-</td>
-</tr>
-</table>
-</div>
+<p>Copy the contents of <strong>Config Info</strong> field.</p>
 </li>
 <li>
-<p>Note the value for <code>clientId</code> in the <strong>Config Info</strong> field. You will need this for the next step.</p>
-</li>
-<li>
-<p>Choose a mobile service from the <strong>Integrations</strong> list. If an option is not available, you can provision a service by choosing that option and associate the mobile client later.</p>
-</li>
-<li>
-<p>Following the <strong>Create Binding</strong> wizard to associate the mobile client with the mobile service. You may be prompted for a <strong>Mobile Client ID</strong>. Enter the value you noted from the previous step.</p>
+<p>Save the file as <code>mobile-services.json</code>.</p>
 </li>
 </ol>
+</div>
+<div class="paragraph">
+<p>The process for using the <code>mobile-services.json</code> file is different for each mobile platform:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Android native</p>
+</li>
+<li>
+<p>iOS native</p>
+</li>
+<li>
+<p>Cordova</p>
+</li>
+<li>
+<p>Xamarin</p>
+</li>
+</ul>
 </div>
 </article>
   </main>

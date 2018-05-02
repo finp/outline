@@ -1,17 +1,6 @@
 
-
-
-
-
-
-
 ?
 Associate a Mobile Client with a Mobile Service
-Associate a Mobile Client with a Mobile Service
-Associate a Mobile Client with the Push Service
-Associate a Mobile Client with the Push Service
-Associate a Mobile Client with the Push Service
-Associate a Mobile Client with the Push Service
 Associate my Mobile Application with a Custom Backend Service
 Configure Cordova Mobile App to use the Push Service
 Configure iOS Mobile App to use the Push Service
@@ -19,24 +8,16 @@ Configuring my Mobile Application for AeroGear Mobile Services
 Installing
 Mobile CI/CD - Add Security Analyser to CI/CD Process
 Mobile CI/CD - Building my Mobile Application
-Mobile CI/CD - Building my Mobile Application
-Mobile CI/CD - Building my Mobile Application
-Mobile CI/CD - Configuring Mobile Client to use the Mobile CI/CD Service
-Mobile CI/CD - Configuring Mobile Client to use the Mobile CI/CD Service
 Mobile CI/CD - Configuring Mobile Client to use the Mobile CI/CD Service
 Mobile CI/CD - Deploy Mobile App
 Mobile CI/CD - Provision
 Mobile Clients
 Mobile Clients - Connect to a Mobile Service
 Mobile Clients - Provision 
-Mobile Clients - Provision 
 Mobile CLI Installation
 Mobile on OpenShift
 Mobile Services
 Mobile Services - Configuring Mobile Services
-Mobile Services - Integrating Mobile Services
-Mobile Services - Integrating Mobile Services
-Mobile Services - Integrating Mobile Services
 Mobile Services - Integrating Mobile Services
 Mobile Services - Provision 
 Provisioning {Push Service}
