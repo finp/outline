@@ -1,13 +1,21 @@
 
-:service-name: Metrics Service
+:service-name: {service-name}
 
 = Using the {service-name}
 
 == Overview of {service-name}
 === {version-no} Release Notes
+// os
 == Setting up {service-name}
 == Configuring {service-name}
+//ide
+== Adding {service-name}s to your iOS App
+== Adding {service-name}s to your Android App
+== Adding {service-name}s to your Cordova App
+//ui
+== Using the Metrics Dashboard - Grafana
 === Allowing OpenShift users access to Grafana dashboards
+//advanced
 == Creating custom metrics using AeroGear SDKs
 == Integrating {service-name} with other mobile services
 == Upgrading {service-name}

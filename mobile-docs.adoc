@@ -9,6 +9,10 @@
 * minishift only for community release
 == Debugging AeroGear Mobile Services
 
+//mobile on openshift
+
+= Using a Mobile Service for Multiple Projects
+
 == Using an AeroGear Mobile Service Showcase Apps
 === Setting up the AeroGear Showcase Project in OpenShift
 === Monitor Service and App

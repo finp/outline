@@ -1,0 +1,11 @@
+= Connecting Mobile App to AeroGear Services
+
+Prerequisites:
+* [x] You have installed Minishift with the 
+
+== Provisioning and Configuring Mobile Services
+
+== Provisioning and Configuring Mobile Client (Connecting to a mobile service)
+
+== Configuring my Mobile App to use Mobile Services
+
